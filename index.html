@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <title>The Mandelbrot Set</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>The Mandelbrot Set</h1>
+      <div id="mandelbrot"> 
+        <div id="canvasDiv">
+          <canvas id="mandelbrotCanvas" height="500" width="500"> Please use a browser that supports the HTML Canvas element.
+          </canvas>
+        </div>
+        <div id="side">
+          <div id="instruction">Select an area with the mouse to zoom.</div>
+          <div id="controls">
+            <div id="options">
+              <h2>Options</h2>
+              <div>
+                <label>Zoom:</label>
+                <button class="zoomButton" onclick="zoomIn();">+</button>
+                <button class="zoomButton" onclick="zoomOut();">-</button>
+              </div>
+              <div>
+                <label for="axes">Draw axes:</label>
+                <input type="checkbox" id="axes" onclick="drawMandelbrot()">
+              </div>
+              <div>
+                <label for="colour">Colour exterior:</label>
+                <input type="checkbox" id="colour" checked onclick="drawMandelbrot()">
+              </div>
+            </div>
+            <div>
+              <label for="iterations">Iterations:</label>
+              <input class="num" type="number" id="iterations" value="150" min="1">
+            </div>
+            <div id="buttonDiv">
+              <button onclick="reset();"><h3>Reset</h3></button>
+              <button onclick="recalculate();"><h3>Draw</h3></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/mandelbrot.js"></script>
+  </body>
+</html>

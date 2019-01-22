@@ -1,0 +1,121 @@
+body {
+        background: #ffeafa;
+        color: #efdaea;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+        font-size: 36pt;
+        color: #000000;
+        margin: 15px;
+        padding: 10px;
+        font-family: 'Poiret One', sans-serif;
+}
+
+h2 {
+        font-size: 18px;
+        color: #000000;
+        padding: 0px;
+        margin: 0px 0px 5px 0px;
+        font-family: 'Poiret One', sans-serif;
+        text-decoration: underline;
+}
+
+h3 {
+        font-size: 14px;
+        color: #000000;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Poiret One', sans-serif;
+        text-decoration: underline;
+}
+
+canvas {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        display: inline-block;
+}
+
+
+div#content {
+        margin: auto;
+}
+
+div {
+        padding: 0px;
+        margin: auto;
+        color: #000000;
+}
+
+label {
+        color: #000000;
+        float: left;
+}
+
+div#canvasDiv {
+        border: 1px solid;
+        border-color: #efdaea;
+        height: 500px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        background: #ffffff;
+        vertical-align: text-top;
+        display: inline-block;
+}
+
+div#instruction {
+        padding: 5px;
+}
+
+div#controls {
+        padding: 10px;
+        border: 1px solid;
+        border-color: #efdaea;
+        vertical-align: top;
+        text-align: right;
+        margin: auto;
+        display: inline-block;
+}
+
+div#options {
+        padding: 0px;
+        margin: 0px;
+}
+
+button {
+        margin: 0px;
+        display: block;
+        background: #efdaea;
+        text-align: center;
+        border: 1px solid;
+        border-color: #efdaea;
+        display: inline-block;
+        padding: 0px 10px 0px 10px;
+        color: #000000;
+}
+
+div#side {
+        display: inline-block;
+        vertical-align: text-top;
+}
+
+div#buttonDiv {
+        text-align: center;
+        float: right;
+        display: block;
+        margin: 10px 10px 0px 10px;
+        padding 0px;
+}
+button.zoomButton {
+        display: inline;
+        padding: 3px 5px 3px 5px;
+        min-width: 20px;
+}
+
+input {
+        color: #000000;
+        border: none;
+        margin: 5px;
+        text-align: right;
+}
