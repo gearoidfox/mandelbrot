@@ -318,6 +318,7 @@ function iterate(a, b, maxIters)
  * for the image.
  */
 function mandelbrotMouseDown(event) {
+    if(event.which != 1) return; 
     drag = true
     let mouseX = event.offsetX;
     let mouseY = event.offsetY;
@@ -344,6 +345,7 @@ function mandelbrotMouseMove(event) {
  * new boundary.
  */
 function mandelbrotMouseUp(event) {
+    if(event.which != 1) return; 
     drag = false;
     let new_xmin = xmin + (ul.x / width) * (xmax - xmin);
     let new_xmax = xmin + (lr.x / width) * (xmax - xmin);
